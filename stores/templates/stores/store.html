@@ -1,0 +1,7 @@
+<h1>This is the {{ store.name }} store.</h1>
+{% for c in store.categories.all %}
+<h2>Category: {{ c.name }}</h2>
+{% for p in c.products.all %}
+<p>{{ p.name }}</p>
+{% endfor %}
+{% endfor %}
